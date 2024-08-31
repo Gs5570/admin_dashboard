@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="./scripts/index.js" defer></script>
+    <title>Odin Dashboard</title>
+</head>
+
+<body>
+
+    <div class="body-container">
+        <div class="left-side-panel-container" id="left-side-panel-container">
+
+
+            <div class="sticky-wrapper">
+                <div class="dashboard-menu">
+                    <div class="dashboard-header">
+                        <span class="material-symbols-outlined"> dashboard </span>
+                        <h2>Dashboard</h2>
+                    </div>
+
+                    <ul class="sidebar-links">
+                        <li>
+                            <a href=""><span class="material-symbols-outlined"> Home </span> Home</a>
+                        </li>
+                        <li>
+                            <a href=""><span class="material-symbols-outlined"> person </span>Profile</a>
+                        </li>
+                        <li>
+                            <a href=""><span class="material-symbols-outlined"> Chat </span>Messages</a>
+                        </li>
+                        <li>
+                            <a href=""><span class="material-symbols-outlined"> History </span>History</a>
+                        </li>
+                        <li>
+                            <a href=""><span class="material-symbols-outlined"> Task </span>Tasks</a>
+                        </li>
+                        <li>
+                            <a href=""><span class="material-symbols-outlined"> Communities </span>Communities</a>
+                        </li>
+                        <li>
+                            <a href=""><span class="material-symbols-outlined"> Settings </span>Settings</a>
+                        </li>
+                        <li>
+                            <a href=""><span class="material-symbols-outlined"> Help </span>Support</a>
+                        </li>
+                        <li>
+                            <a href=""><span class="material-symbols-outlined"> Security </span>Privacy</a>
+                        </li>
+                        <li>
+                            <a href=""><span class="material-symbols-outlined"> Logout </span> Log
+                                Out</a>
+                        </li>
+                        <li>
+                            <a href=""><span class="material-symbols-outlined">
+                                    copyright
+                                </span> Made by Galekwan Sango</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-dash-container">
+            <div class="search-container">
+                <button class="hamburger" id="hamburger" aria-label="Open sidebar" aria-expanded="false">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+                <div class="search-bar-container">
+
+                    <form>
+                        <label for="search-bar"></label>
+                        <input type="search" name="search-bar" id="search-bar" placeholder="Search..." />
+
+                        <button type="button">
+                            <span class="material-symbols-outlined" id="search-btn-symbol">
+                                search
+                            </span>
+                        </button>
+                    </form>
+                </div>
+                <div class="icons-container">
+                    <div class="search-bar-btn-container">
+                        <button type="button" class="search-bar-icon-btn"
+                            onClick="alert('feature yet to be developed!')">
+                            <span class="material-symbols-outlined"> light_mode </span>
+                        </button>
+                        <p>Light</p>
+                    </div>
+                    <div class="search-bar-btn-container">
+                        <button type="button" class="search-bar-icon-btn"
+                            onClick="alert('feature yet to be developed!')">
+                            <span class="material-symbols-outlined"> Dark_mode </span>
+                        </button>
+                        <p>Dark</p>
+                    </div>
+                    <div class="search-bar-btn-container">
+                        <button type="button" class="search-bar-icon-btn"
+                            onclick="window.open('https://github.com/Gs5570', '_blank')">
+                            <span class=" material-symbols-outlined"> code_blocks </span>
+                        </button>
+                        <p>Github</p>
+                    </div>
+                </div>
+            </div>
+            <div class="title-container">
+                <p class="title">Projects</p>
+                <div class="buttons-container">
+                    <button type="button" onClick="alert('feature yet to be developed!')">New </button>
+                    <button type="button" onClick="alert('feature yet to be developed!')">Upload</button>
+                    <button type="button" onClick="alert('feature yet to be developed!')">Share</button>
+                </div>
+            </div>
+            <div class="dashboard-content">
+                <div class="projects">
+                    <div class="project-item">
+                        <div class="item-header-container">
+                            <p>Portfolio</p>
+                        </div>
+                        <div class="item-body-container">
+                            <div class="img-container">
+                                <img src="./media/portfolio-img.png" alt="">
+                            </div>
+                            <div class="project-description-container">
+                                <p>I am a passionate Full Stack Software Engineer with expertise in building scalable,
+                                    robust, and user-centric applications. My skill set spans both front-end and
+                                    back-end development, allowing me to create seamless digital experiences from
+                                    concept to deployment. I have experience working with a variety of technologies,
+                                    frameworks, and tools, and I thrive in environments where innovation and
+                                    problem-solving are at the forefront.</p>
+                            </div>
+                        </div>
+                        <div class="item-footer-container">
+                            <div class="liveview-container">
+                                <a href="https://galekwanportfolio.netlify.app" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img class="project-live-view-icon" src="./media/eye preview.png"
+                                        alt="view portfolio project icon" />
+                                </a>
+                            </div>
+                            <div class="github-container">
+                                <a href="https://github.com/Gs5570/job-ready-portfolio.git" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img class="project-github-icon" src="./media/github-icon.png"
+                                        alt="portfolio github link icon" />
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="item-header-container">
+                            <p>Tenzy</p>
+                        </div>
+                        <div class="item-body-container">
+                            <div class="img-container">
+                                <img src="./media/dices-img.png" alt="">
+                            </div>
+                            <div class="project-description-container">
+                                <p>Fast, fun, engaging, and surprisingly intricate, Tenzi is perfect for table top
+                                    beginners and aficionados alike. The player gets 10 dice. The object of the game is
+                                    to roll the dice as fast as possible, the player who gets all dice on the same
+                                    number and yells "Tenzi!" is the winner. the purpose of this project was to build a
+                                    fun dynamic game that require user interaction</p>
+                            </div>
+                        </div>
+                        <div class="item-footer-container">
+                            <div class="liveview-container">
+                                <a href="https://tenzy-game-gs.netlify.app" target="_blank" rel="noopener noreferrer">
+                                    <img class="project-live-view-icon" src="./media/eye preview.png"
+                                        alt="view tenzy game project icon" />
+                                </a>
+
+                            </div>
+                            <div class="github-container">
+                                <a href="https://github.com/Gs5570/Tenzies_Game.git" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img class="project-github-icon" src="./media/github-icon.png"
+                                        alt="tenzy game github link icon" />
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="item-header-container">
+                            <p>Src-ML</p>
+                        </div>
+                        <div class="item-body-container">
+                            <div class="img-container">
+                                <img src="./media/srcML-logo.svg" alt="">
+                            </div>
+                            <div class="project-description-container">
+                                <p>SrcML is a free software application licensed under GPL. it a lightweight, highly
+                                    scalable, robust, multi-language parsing tool to convert source code into srcML that
+                                    offers an infrastructure for the exploration, analysis, and manipulation of source
+                                    code which are transformed in XML format.</p>
+                            </div>
+                        </div>
+                        <div class="item-footer-container">
+                            <div class="liveview-container">
+                                <a href="#" target="_blank" rel="noopener noreferrer"
+                                    onClick="alert('Does not have preview follow instruction on Github!')">
+                                    <img class="project-live-view-icon" src="./media/eye preview.png"
+                                        alt="view src-Ml project icon" />
+                                </a>
+
+                            </div>
+                            <div class="github-container">
+                                <a href="https://github.com/Gs5570/srcml_web_application.git" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img class="project-github-icon" src="./media/github-icon.png"
+                                        alt="src-ml github link icon" />
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="item-header-container">
+                            <p>Trivia</p>
+                        </div>
+                        <div class="item-body-container">
+                            <div class="img-container">
+                                <img src="./media/quiz-trivia-img.png" alt="">
+                            </div>
+                            <div class="project-description-container">
+                                <p>Quizzicle Trivia Quiz game is a free game full of fun that consists of guessing the
+                                    answers for variety of fun questions. Quizzicle Trivia Quiz includes different kinds
+                                    of games, from traditional quizzes to brainteaser style fast games. Plenty of photo
+                                    quizzes of fun facts, celebrities riddles and more. Crack the trivia and answer the
+                                    riddles.</p>
+                            </div>
+                        </div>
+                        <div class="item-footer-container">
+                            <div class="liveview-container">
+                                <a href="https://gs5570-quizzical-game.netlify.app" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img class="project-live-view-icon" src="./media/eye preview.png"
+                                        alt="view trivia project icon" />
+                                </a>
+
+                            </div>
+                            <div class="github-container">
+                                <a href="https://github.com/Gs5570/quizzical-game.git" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img class="project-github-icon" src="./media/github-icon.png"
+                                        alt="https://github.com/Gs5570/quizzical-game.git" />
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="item-header-container">
+                            <p>E-store</p>
+                        </div>
+                        <div class="item-body-container">
+                            <div class="img-container">
+                                <img src="./media/e-store.png" alt="">
+                            </div>
+                            <div class="project-description-container">
+                                <p>
+                                    E-store is a full stack project developed by a team of five engineers that mimics
+                                    the implementation of an online retailer shop.In the e-store, users can browser,
+                                    custom and order items they want.The project was class assignment that had the goal
+                                    introducing us to the cores principles of Software Engineer, such as: Development
+                                    life Cycle, Requirements Engineering, Software Design, Project Elaboration and
+                                    Planning , testing and more
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-footer-container">
+                            <div class="liveview-container">
+                                <a href="https://angular-estore.netlify.app" target="_blank" rel="noopener noreferrer">
+                                    <img class="project-live-view-icon" src="./media/eye preview.png"
+                                        alt="view e-store project icon" />
+                                </a>
+
+                            </div>
+                            <div class="github-container">
+                                <a href="https://github.com/Gs5570/e-store.git" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img class="project-github-icon" src="./media/github-icon.png"
+                                        alt="e-store github link" />
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="item-header-container">
+                            <p>Rock Paper Scissor</p>
+                        </div>
+                        <div class="item-body-container">
+                            <div class="img-container">
+                                <img src="./media/rock-paper-scissors-img.png" alt="">
+                            </div>
+                            <div class="project-description-container">
+                                <p>This is a responsive web interface designed to play rock - paper - scissor against
+                                    the computer.
+
+                                    Rock paper scissors (also known by several other names and word orders, see § Names)
+                                    is an intransitive hand game, usually played between two people, in which each
+                                    player simultaneously forms one of three shapes with an outstretched hand.
+
+                                    However, this time we offered a computerized version of it.</p>
+                            </div>
+                        </div>
+                        <div class="item-footer-container">
+                            <div class="liveview-container">
+                                <a href="https://galerockpaperscissor.netlify.app" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img class="project-live-view-icon" src="./media/eye preview.png"
+                                        alt="view rock paper scissor project icon" />
+                                </a>
+
+                            </div>
+                            <div class="github-container">
+                                <a href="https://github.com/Gs5570/rock-paper-scissor.git" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img class="project-github-icon" src="./media/github-icon.png"
+                                        alt="rock paper scissor project github link icon" />
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="item-header-container">
+                            <p>Landing-Page</p>
+                        </div>
+                        <div class="item-body-container">
+                            <div class="img-container">
+                                <img src="./media/landing-page-img.png" alt="">
+                            </div>
+                            <div class="project-description-container">
+                                <p>
+                                    Built a simple static responsive page with HTML, CSS and javascript.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="item-footer-container">
+                            <div class="liveview-container">
+                                <a href="https://landingpagegale.netlify.app" target="_blank" rel="noopener noreferrer">
+                                    <img class="project-live-view-icon" src="./media/eye preview.png"
+                                        alt="view landing page icon" />
+                                </a>
+
+                            </div>
+                            <div class="github-container">
+                                <a href="https://github.com/Gs5570/Landing-Page.git" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img class="project-github-icon" src="./media/github-icon.png"
+                                        alt="landing page github link" />
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="item-header-container">
+                            <p>Sign up Page</p>
+                        </div>
+                        <div class="item-body-container">
+                            <div class="img-container">
+                                <img src="./media/login-sign-up-img.png" alt="">
+                            </div>
+                            <div class="project-description-container">
+                                <p>This project is part of the Intermediate HTML and CSS course. The goal was to create
+                                    a sign-up form for an imaginary service, incorporating various HTML5, CSS, and
+                                    JavaScript techniques.</p>
+                            </div>
+                        </div>
+                        <div class="item-footer-container">
+                            <div class="liveview-container">
+                                <a href="https://gale-sign-up-odin.netlify.app" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img class="project-live-view-icon" src="./media/eye preview.png"
+                                        alt="view sign up project icon" />
+                                </a>
+
+                            </div>
+                            <div class="github-container">
+                                <a href="https://github.com/Gs5570/sign-up-form-JS.git" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img class="project-github-icon" src="./media/github-icon.png"
+                                        alt="sign up project github link icon" />
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-item">
+                        <div class="item-header-container">
+                            <p>Interview assessment</p>
+                        </div>
+                        <div class="item-body-container">
+                            <div class="img-container">
+                                <img src="./media/Interview assessment.png" alt="">
+                            </div>
+                            <div class="project-description-container">
+                                <p>This project was an interview skill test to showcase skills in buildling a Single
+                                    page application.
+
+                                    The Goal is to convert this into a single page response site. The carousel should be
+                                    responsive. On mobile, the tabs should be converted to an accordion. History, team -
+                                    these are internal links in the page to their respective sections.</p>
+                            </div>
+                        </div>
+                        <div class="item-footer-container">
+                            <div class="liveview-container">
+                                <a href="https://interviewcode.netlify.app" target="_blank" rel="noopener noreferrer">
+                                    <img class="project-live-view-icon" src="./media/eye preview.png"
+                                        alt="view interview code icon" />
+                                </a>
+
+                            </div>
+                            <div class="github-container">
+                                <a href="https://github.com/Gs5570/Interview-test.git" target="_blank"
+                                    rel="noopener noreferrer">
+                                    <img class="project-github-icon" src="./media/github-icon.png"
+                                        alt="interview code github link icon" />
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="right-side-panel">
+                    <div class="news-container">
+                        <h2>Announcement</h2>
+                        <div class="news-item-container">
+                            <div class="news-item">
+                                <p>news-1</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Minima earum, aspernatur dicta aliquam pariatur assumenda?
+                                    Voluptates eaque consequatur rerum vitae doloribus
+                                    doloremque natus incidunt eum, consectetur harum accusamus,
+                                    vero et.
+                                </p>
+                            </div>
+                            <div class="news-item">
+                                <p>news-2</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Minima earum, aspernatur dicta aliquam pariatur assumenda?
+                                    Voluptates eaque consequatur rerum vitae doloribus
+                                    doloremque natus incidunt eum, consectetur harum accusamus,
+                                    vero et.
+                                </p>
+                            </div>
+                            <div class="news-item">
+                                <p>news-3</p>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                    Minima earum, aspernatur dicta aliquam pariatur assumenda?
+                                    Voluptates eaque consequatur rerum vitae doloribus
+                                    doloremque natus incidunt eum, consectetur harum accusamus,
+                                    vero et.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="exercise-container">
+                        <h2>Javascript-exercise</h2>
+                        <div class="exercise-item-container">
+                            <div class="exercise-item">
+                                <div class="item-container">
+                                    <p>exercise-1</p>
+                                </div>
+                                <div class="item-container">
+                                    <p>exercise-2</p>
+                                </div>
+                                <div class="item-container">
+                                    <p>exercise-3</p>
+                                </div>
+                                <div class="item-container">
+                                    <p>exercise-4</p>
+                                </div>
+                                <div class="item-container">
+                                    <p>exercise-5</p>
+                                </div>
+                            </div>
+                            <div class="exercise-item">
+                                <div class="item-container">
+                                    <p>exercise-1</p>
+                                </div>
+                                <div class="item-container">
+                                    <p>exercise-2</p>
+                                </div>
+                                <div class="item-container">
+                                    <p>exercise-3</p>
+                                </div>
+                                <div class="item-container">
+                                    <p>exercise-4</p>
+                                </div>
+                                <div class="item-container">
+                                    <p>exercise-5</p>
+                                </div>
+                                <div class="item-container">
+                                    <p>exercise-6</p>
+                                </div>
+                                <div class="item-container">
+                                    <p>exercise-7</p>
+                                </div>
+                                <div class="item-container">
+                                    <p>exercise-8</p>
+                                </div>
+                                <div class="item-container">
+                                    <p>exercise-9</p>
+                                </div>
+                                <div class="item-container">
+                                    <p>exercise-10</p>
+                                </div>
+                            </div>
+                            <div class="exercise-item">
+                                <div class="item-container">
+                                    <p>exercise-1</p>
+                                </div>
+                                <div class="item-container">
+                                    <p>exercise-2</p>
+                                </div>
+                                <div class="item-container">
+                                    <p>exercise-3</p>
+                                </div>
+                                <div class="item-container">
+                                    <p>exercise-4</p>
+                                </div>
+                                <div class="item-container">
+                                    <p>exercise-5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="trending-container">
+                        <h2>Trending</h2>
+                        <div class="trending-item-container">
+                            <div class="trending-item">
+                                <div class="trending-content-container">
+                                    <img src="./media/account-profile-icon.png" alt="" />
+                                    <div class="trending-text">
+                                        <p>username</p>
+                                        <p>user-info</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <div class="trending-content-container">
+                                    <img src="./media/account-profile-icon.png" alt="" />
+                                    <div class="trending-text">
+                                        <p>username</p>
+                                        <p>user-info</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <div class="trending-content-container">
+                                    <img src="./media/account-profile-icon.png" alt="" />
+                                    <div class="trending-text">
+                                        <p>username</p>
+                                        <p>user-info</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <div class="trending-content-container">
+                                    <img src="./media/account-profile-icon.png" alt="" />
+                                    <div class="trending-text">
+                                        <p>username</p>
+                                        <p>user-info</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <div class="trending-content-container">
+                                    <img src="./media/account-profile-icon.png" alt="" />
+                                    <div class="trending-text">
+                                        <p>username</p>
+                                        <p>user-info</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <div class="trending-content-container">
+                                    <img src="./media/account-profile-icon.png" alt="" />
+                                    <div class="trending-text">
+                                        <p>username</p>
+                                        <p>user-info</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <div class="trending-content-container">
+                                    <img src="./media/account-profile-icon.png" alt="" />
+                                    <div class="trending-text">
+                                        <p>username</p>
+                                        <p>user-info</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="trending-item">
+                                <div class="trending-content-container">
+                                    <img src="./media/account-profile-icon.png" alt="" />
+                                    <div class="trending-text">
+                                        <p>username</p>
+                                        <p>user-info</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
